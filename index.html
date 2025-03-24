@@ -3,66 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparsh Garg - Personal Website</title>
+    <title>Sparsh Garg - Portfolio</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f4;
         }
+
+        /* Header */
         header {
             background: #333;
             color: white;
-            padding: 20px;
+            padding: 15px;
+            text-align: center;
         }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sections */
         section {
             padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
+
+        h2 {
+            color: #333;
         }
-        footer {
-            background: #333;
+
+        .social-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #007BFF;
             color: white;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
+
+    <!-- Navigation -->
     <header>
         <h1>Sparsh Garg</h1>
-        <p>Highly motivated B.Tech CSE student with expertise in Software Development & Machine Learning</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="container">
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi, I'm Sparsh Garg, a B.Tech Computer Science student passionate about coding, problem-solving, and software development.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sparsh-garg-2b3322280" target="_blank">LinkedIn</a>
+            <a href="mailto:sparshgarg.pks@gmail.com">Email Me</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>B.Tech - Computer Science and Engineering, SRM Institute of Science and Technology</p>
-    </section>
-    <section class="container">
-        <h2>Skills</h2>
-        <p>Python, Java, C, Machine Learning, SQL, Data Structures & Algorithms, HTML, CSS</p>
-    </section>
-    <section class="container">
-        <h2>Projects</h2>
-        <ul style="list-style-type: none; padding: 0;">
-            <li><strong>Machine Learning Housing Price Predictor</strong> - Used ML techniques to predict housing prices based on location, size, and amenities.</li>
-            <li><strong>Interactive To-Do List</strong> - Built a to-do list with add, edit, delete, and local storage features.</li>
-            <li><strong>BMI Calculator</strong> - Implemented a real-time BMI calculator with input validation.</li>
-            <li><strong>Login Page</strong> - Created a secure and responsive login page for authentication.</li>
+        <p><strong>Education:</strong> B.Tech - Computer Science and Engineering at SRM Institute of Science and Technology</p>
+        <p><strong>Certifications:</strong></p>
+        <ul>
+            <li>SQL Basic - HackerRank</li>
+            <li>Python Basic - HackerRank</li>
+            <li>Java Basic - HackerRank</li>
+            <li>Machine Learning with Python - Campalign</li>
+            <li>Data Science with Python - SimpliLearn</li>
         </ul>
     </section>
-    <section class="container">
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Machine Learning Housing Price Prediction</h3>
+            <p>Developed a Machine Learning model to predict housing prices based on factors like location, size, and amenities.</p>
+            <p><strong>Technologies Used:</strong> Python, Machine Learning, Data Analysis, Regression Models, Feature Engineering, Model Deployment</p>
+        </div>
+
+        <div class="project">
+            <h3>To-Do List</h3>
+            <p>Developed an interactive to-do list using HTML, CSS, and JavaScript for task management.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project">
+            <h3>BMI Calculator</h3>
+            <p>Developed a BMI Calculator to calculate Body Mass Index based on user input.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS</p>
+        </div>
+
+        <div class="project">
+            <h3>Login Page</h3>
+            <p>Developed a responsive and secure login page for user authentication and session management.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, VS Code</p>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, Java, C</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Database Management:</strong> SQL</li>
+            <li><strong>Machine Learning:</strong> Python, Data Analysis, Feature Engineering</li>
+            <li><strong>Tools & Technologies:</strong> Visual Studio Code, Git, GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:sparshgarg.pks@gmail.com">sparshgarg.pks@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/gargsparsh07" target="_blank">gargsparsh07</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sparsh-garg-2b3322280" target="_blank">Sparsh Garg</a></p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-    <footer>
-         2025 Sparsh Garg. All Rights Reserved.
-    </footer>
+
 </body>
 </html>
